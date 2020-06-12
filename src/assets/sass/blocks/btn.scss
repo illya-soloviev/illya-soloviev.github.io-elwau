@@ -1,0 +1,105 @@
+.btn {
+    padding: .75em 1em;
+
+    background: none;
+    background-color: $orange;
+    border: 0;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+
+    transition: background-color .1s linear;
+
+    &:hover {
+        background-color: darken($orange, 10%);
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &--no-icon {
+        display: inline-block;
+    }
+
+    &--center {
+        justify-content: center;
+    }
+
+    &--small {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &--full {
+        width: 100%;
+    }
+
+    &--reg-btn {
+        font-size: 1.5rem;
+    }
+
+    .tabs-reg__nav-item & {
+        padding: .95em .9em;
+
+        background-color: $white;
+        border: 1px solid $gray-light;
+
+        font-size: 1.5rem;
+        color: $black;
+    }
+
+    .tabs-reg__nav-item.active & {
+        background-color: $orange;
+        border-color: $orange;
+
+        color: $white;
+    }
+
+    @media (max-width: 565px) {
+        font-size: 1.6rem;
+    }
+}
+
+.btn svg {
+    width: 17px;
+    height: 17px;
+    margin-left: 15px;
+
+    fill: $white;
+}
+
+.tabs-reg__nav-item svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+    margin-right: 10px;
+
+    fill: $gray-light;
+}
+
+.tabs-reg__nav-item.active svg {
+    fill: $white;
+}
+
+.btn__desktop-text {
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.btn__mobile-text {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+}

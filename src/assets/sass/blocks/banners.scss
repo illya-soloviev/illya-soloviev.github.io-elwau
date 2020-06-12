@@ -1,0 +1,38 @@
+.banners {
+
+    @media (max-width: 991px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (max-width: 565px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.banners__item {
+    width: 100%;
+    max-width: 210px;
+    height: 245px;
+    margin-bottom: 25px;
+
+    background-color: #bdbdbd;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 991px) {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 565px) {
+        margin-right: 0;
+    }
+}

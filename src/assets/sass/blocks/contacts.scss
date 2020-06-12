@@ -1,0 +1,14 @@
+.contacts {
+    font-style: normal;
+    color: $gray-dark;
+    line-height: 1.5;
+}
+
+.contacts__link {
+    color: $gray-dark;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

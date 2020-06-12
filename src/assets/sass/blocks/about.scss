@@ -1,0 +1,27 @@
+.about__title {
+    margin-bottom: 10px;
+
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $сolor-main;
+
+    @media (max-width: 565px) {
+        text-align: center;
+    }
+}
+
+.about__text {
+    font-weight: 400;
+    color: $сolor-main;
+    line-height: 1.4;
+}
+
+.about__link {
+    font-weight: 400;
+    color: $color-accent;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
